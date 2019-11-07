@@ -32,3 +32,8 @@ void point::Deplace(float nX, float nY) {
 	this->nX += nX;
 	this->nY += nY;
 };
+
+void point::Affiche() {
+	std::cout << "X: " << this->nX << std::endl;
+	std::cout << "Y: " << this->nY << std::endl;
+};

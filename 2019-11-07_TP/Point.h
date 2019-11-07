@@ -27,6 +27,7 @@ public:
 
 	//methodes
 	void Deplace(float nX, float nY);
+	void Affiche();
 
 	///Constructer (Sans paramètres)
 	/*CPoint::CPoint() {

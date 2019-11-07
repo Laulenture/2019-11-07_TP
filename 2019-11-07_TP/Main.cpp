@@ -18,13 +18,11 @@ int main()
 	//Creation objet point
 	ptMonPoint.Init(0, -12);
 	//affichage coordonnées du point
-	std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
-	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;
+	ptMonPoint.Affiche();
 	//déplacement du point
 	ptMonPoint.Deplace(-12, 12);
 	//affichage coordonnées du point
-	std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
-	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;
+	ptMonPoint.Affiche();
 
 
 	system("pause");
