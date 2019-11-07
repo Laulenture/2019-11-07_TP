@@ -1,6 +1,6 @@
 #pragma once
 ///Point dans un plan
-class CPoint
+class point
 {
 	///Par défaut la portée des membres d'un classe sont private
 private:
@@ -17,8 +17,8 @@ public:
 
 	///Prototypes ou déclarations
 	///Assesseurs
-	float getX();
-	float getY();
+	float abcisse();
+	float ordonnee();
 	///Mutateurs
 	void setX(float nX);
 	void setY(float nY);
@@ -26,8 +26,7 @@ public:
 	void Init(float nX, float nY);
 
 	//methodes
-	void DeplacerPoint(float nX, float nY);
-	void AffichePoint();
+	void Deplace(float nX, float nY);
 
 	///Constructer (Sans paramètres)
 	/*CPoint::CPoint() {

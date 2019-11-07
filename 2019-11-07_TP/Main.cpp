@@ -2,7 +2,7 @@
 #include <iostream>
 #include <cmath>
 #include <cstdlib>
-#include "CPoint.h"
+#include "Point.h"
 
 ///'cout', 'cin' et 'endl' font partie du namespace 'std', il faut soit inclure le namespace en début de programme ou rajouter 'std::' devant les primitive de 'std'
 //using namespace std;
@@ -13,16 +13,18 @@
 
 int main()
 {
-	CPoint ptMonPoint;
+	point ptMonPoint;
 
 	//Creation objet point
 	ptMonPoint.Init(0, -12);
 	//affichage coordonnées du point
-	ptMonPoint.AffichePoint();
+	std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
+	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;
 	//déplacement du point
-	ptMonPoint.DeplacerPoint(-12, 12);
+	ptMonPoint.Deplace(-12, 12);
 	//affichage coordonnées du point
-	ptMonPoint.AffichePoint();
+	std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
+	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;
 
 
 	system("pause");
