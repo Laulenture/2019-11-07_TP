@@ -7,6 +7,7 @@ private:
 	///que dans la classe ell-même
 	int nX;
 	int nY;
+	static int count;
 
 protected:
 	///dans la classe et les enfants de la classe 
@@ -25,21 +26,17 @@ public:
 	///Init
 	void Init(float nX, float nY);
 
-	//methodes
+	///methodes
 	void Deplace(float nX, float nY);
 	void Affiche();
 
-	///Constructer (Sans paramètres)
-	/*CPoint::CPoint() {
-		this->nX = 0;
-		this->nY = -12;
-		//this->pnX = (int*)malloc(sizeof(int));
-		//this->pnY = (int*)malloc(sizeof(int));
+	//constructeur
+	point(float nX, float nY)
+	{
+		count++;
+		std::cout << "Constructeur" << std::endl;
+		this->nX = nX;
+		this->nY = nY;
 	}
-
-	CPoint::CPoint(int nX, int nY) {
-		this->nX = 0;
-		this->nY = -12;
-	}*/
 
 };

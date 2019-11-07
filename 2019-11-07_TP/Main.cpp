@@ -1,6 +1,5 @@
 
 #include <iostream>
-#include <cmath>
 #include <cstdlib>
 #include "Point.h"
 
@@ -13,17 +12,25 @@
 
 int main()
 {
-	point ptMonPoint;
+	point ptMonPoint(0,-12);
 
-	//Creation objet point
-	ptMonPoint.Init(0, -12);
+	//Initialisation objet point
+	//ptMonPoint.Init(0, -12);
 	//affichage coordonnées du point
+	/*std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
+	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;*/
 	ptMonPoint.Affiche();
 	//déplacement du point
 	ptMonPoint.Deplace(-12, 12);
 	//affichage coordonnées du point
+	/*std::cout << "X: " << ptMonPoint.abcisse() << std::endl;
+	std::cout << "Y: " << ptMonPoint.ordonnee() << std::endl;*/
 	ptMonPoint.Affiche();
 
+	//creation deuxième objet
+	point ptMonPoint2(0, -12);
+	//afichage deuxième objet
+	ptMonPoint2.Affiche();
 
 	system("pause");
 

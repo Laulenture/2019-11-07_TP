@@ -1,7 +1,8 @@
 #include <iostream>
-#include <cmath>
 #include <cstdlib>
 #include "Point.h"
+
+int point::count = 0;
 
 ///Assesseurs
 float point::abcisse() {
@@ -33,7 +34,9 @@ void point::Deplace(float nX, float nY) {
 	this->nY += nY;
 };
 
+
 void point::Affiche() {
 	std::cout << "X: " << this->nX << std::endl;
 	std::cout << "Y: " << this->nY << std::endl;
+	std::cout << "Nombre d'objets: " << this->count << std::endl;
 };
